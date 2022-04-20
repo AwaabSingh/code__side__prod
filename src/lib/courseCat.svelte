@@ -1,23 +1,13 @@
 
 <script>
-     // import Swiper core and required modules
-  import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
+  import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+  import { getCourses } from '../Requests/courses'
 import { Swiper, SwiperSlide } from 'swiper/svelte';
 import CourseCard from '../lib/Course/CourseCard.svelte'
-// import Products from '../store/courseStore'
-import { onMount } from 'svelte'
-import url from '../store/url'
 import Loading from '../lib/Loading.svelte'
-let courses = []
 
-onMount( async () => {
-    let reponse = await fetch(`${url}/allcourse`);
-    let courseData = await reponse.json();
-    courses = courseData.detail
-})
 
-// console.log(courses)
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -53,11 +43,58 @@ let screenWidth;
       
      
   <!-- course card -->
-  {#if screenWidth > 1042} 
+  {#if screenWidth > 922} 
   <Swiper
   modules={[Navigation, Pagination, Scrollbar, A11y]}
   spaceBetween={150}
   slidesPerView={4}
+  navigation
+  pagination={true}
+
+>
+
+  {#await getCourses()}
+  <Loading/>
+  {:then courses}
+  {#each courses as course}
+  <SwiperSlide class='mx-8'>
+    <CourseCard {course}/>
+  </SwiperSlide>
+  {/each}
+  {/await}
+  
+
+ 
+</Swiper>
+  {:else}
+  <Swiper
+  modules={[Navigation, Pagination , Scrollbar, A11y]}
+  spaceBetween={150}
+  slidesPerView={3}
+  navigation
+  pagination={true}
+
+>
+
+{#await getCourses()}
+<Loading/>
+{:then courses}
+{#each courses as course}
+<SwiperSlide class='mx-8'>
+  <CourseCard {course}/>
+</SwiperSlide>
+{/each}
+{/await}
+  
+
+ 
+</Swiper>
+  {/if}
+
+  <!-- <Swiper
+  modules={[Navigation, Pagination, Scrollbar, A11y]}
+  spaceBetween={150}
+  slidesPerView={2}
   navigation
   pagination={true}
 
@@ -69,32 +106,10 @@ let screenWidth;
   </SwiperSlide>
   {:else}
   <Loading/>
-  {/each}
+  {/each} -->
   
 
  
-</Swiper>
-  {:else}
-  <Swiper
-  modules={[Navigation, Pagination, Scrollbar, A11y]}
-  spaceBetween={150}
-  slidesPerView={3}
-  navigation
-  pagination={true}
-
->
-
-{#each courses as course}
-  <SwiperSlide class='mx-5'>
-    <CourseCard {course}/>
-  </SwiperSlide>
-  {:else}
-  <Loading/>
-  {/each}
-  
-
- 
-</Swiper>
-  {/if}
+<!-- </Swiper> -->
  
 </section>

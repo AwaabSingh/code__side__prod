@@ -1,5 +1,5 @@
 import { writable } from 'svelte/store'
-import { getProducts } from '../Requests/products'
+import { getProducts } from '../Requests/courses'
 
 const store = writable(getProducts())
 
