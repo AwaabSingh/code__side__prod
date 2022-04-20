@@ -8,17 +8,17 @@ const userStore = writable()
 // }
 
 // set user t localstorage
-export const setStorageUser = (user) => {
-     localStorage.setItem('user', JSON.stringify(user))
-}
+// export const setStorageUser = (user) => {
+//      localStorage.setItem('user', JSON.stringify(user))
+// }
 
-export const setUser = (user) => {
-    userStore.set(user)
-} 
+// export const setUser = (user) => {
+//     userStore.set(user)
+// } 
 
-export const logoutUser = () => {
-    localStorage.clear()
-}
+// export const logoutUser = () => {
+//     localStorage.clear()
+// }
 
 
 export default userStore
