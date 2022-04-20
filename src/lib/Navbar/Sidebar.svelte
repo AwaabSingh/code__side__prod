@@ -5,6 +5,7 @@
     import globalStore from '../../store/globalStore'
     import SearchIcon from '../SearchIcon.svelte'
     
+    
   
 
     let closeSidebar = globalStore.toggleItem;

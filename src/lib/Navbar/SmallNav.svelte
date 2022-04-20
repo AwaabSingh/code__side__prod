@@ -3,6 +3,7 @@
     import Icon from 'svelte-icons-pack/Icon.svelte';
     import AiOutlineBars from "svelte-icons-pack/ai/AiOutlineBars";
     import globalStore from '../../store/globalStore';
+    import AiOutlineMenu from "svelte-icons-pack/ai/AiOutlineMenu";
 
     let openSidebar = globalStore.toggleItem
 </script>
@@ -21,7 +22,7 @@
         <div class="flex space-x-5 items-center">
           <CartBtn/>
           <button class="mx-auto" on:click="{() => openSidebar('sidebar', true)}">
-              <Icon src={AiOutlineBars} color="#4F4F86" size="25"/>
+              <Icon src={ AiOutlineMenu} color="#4F4F86" size="25"/>
           </button>
         </div>
         </div>
