@@ -5,6 +5,7 @@
     import globalStore  from '../store/globalStore'
     import Footer from '../lib/Footer.svelte'
     import Alert from '$lib/Alert.svelte'
+    import Cart from '$lib/Cart/Cart.svelte'
 
 </script>
 
@@ -12,6 +13,9 @@
 <Navbar/>
 {#if $globalStore.sidebar}
 <Sidebar/>
+{/if}
+{#if $globalStore.cart}
+<Cart/>
 {/if}
 {#if $globalStore.alert}
  <Alert/>

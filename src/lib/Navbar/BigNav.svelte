@@ -4,7 +4,7 @@
     //  import SearchIcon from '../SearchIcon.svelte'
     import globalStore from '../../store/globalStore'
      import CartBtn from '../Cart/CartBtn.svelte'
-    //  import LoginLink from '../LoginLink.svelte'
+     import LoginLink from '../LoginLink.svelte'
 
      
 </script>
@@ -33,7 +33,7 @@
     
       <!-- Button -->
       <div class="flex space-x-12 justify-center items-center ml-5">
-        <a href="/login" class="hidden p-2 px-16 pt-2 text-lgPur rounded-xl baseline hover:bg-dkPur hover:text-white md:block border border-dkPur"  on:click="{() => globalStore.toggleItem('sidebar', false)}">Login</a>
+       <LoginLink/>
     <div class="px-10">
       <CartBtn/> 
     </div>

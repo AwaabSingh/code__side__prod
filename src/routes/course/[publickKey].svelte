@@ -10,15 +10,18 @@
     import BiSolidFilePdf from "svelte-icons-pack/bi/BiSolidFilePdf";
     import AiOutlineCloudDownload from "svelte-icons-pack/ai/AiOutlineCloudDownload";
     import { getCourse } from '../../Requests/courses'
+    import AboutInstructor from '$lib/Course/AboutInstructor.svelte'
+    import Faq from '$lib/Course/Faq.svelte'
+    import globalStore from '../../store/globalStore'
 
      let pk = $page.params.publickKey
     let courseData = {}
 
-    async function test () {
+    async function courses () {
         courseData = await getCourse(pk)
     }
   
-    test();
+    courses();
     
     const start = [0,1,2,3,]
     const secs = [0,1,2]
@@ -75,18 +78,12 @@
             <!-- card & which -->
                <div class="flex space-x-40">
                    <!-- butten -->
-                   <button href="" class="px-5 py-3 text-white bg-dkPur rounded-xl">Add to cart</button>
+                   <button href="" class="px-5 py-3 text-white bg-dkPur rounded-xl" on:click="{() => globalStore.toggleItem('cart', true)}">Add to cart</button>
                    <div class="mt-2 mr-10 md:pr-40">
                        <Icon src={AiOutlineHeart} color='red' size='35'/>
                    </div>
                </div>
-          <!-- <div class="flex justify-center md:justify-start">
-            <a
-              href="#"
-              class="p-3 px-6 pt-2 text-dkPur bg-brightRed rounded-full baseline hover:bg-brightRedLight"
-              >Get Started</a
-            >
-          </div> -->
+      
         </div>
         <!-- Image -->
         <div class="md:w-1/2 md:pr-20 px-5">
@@ -233,6 +230,7 @@
             <CourseSessions/>
             {/each}
           </div>
+        </div>
 
           <div class="max-w-6xl px-5 md:mx-auto mt-20 text-center mx-3">
             <h2 class="text-xl md:text-4xl font-bold text-center md:text-left">
@@ -252,9 +250,45 @@
                {/each}
             </div>
           </div>
-         
+         <!-- Instructor -->
+         <div class="max-w-6xl px-5 md:mx-auto mt-20 text-center mx-3">
+             <AboutInstructor/>
+         </div>
+        <!-- puchace -->
+         <div class=" pt-5  mt-20 text-center  bg-dkPur ">
+          <div
+          class="flex flex-col-reverse items-center mx-20 m mt-10 space-y-0 md:space-y-0 md:flex-row"
+        >
+          <!-- Left item -->
+          <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+            <h1
+              class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left text-white"
+            >
+             Course Price
+            </h1>
+            <h1
+            class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left text-white"
+          >
+          &#8358;{courseData.price}
+          </h1>
+            <div class="flex justify-center md:justify-start pt-5">
+              <a
+                href="#"
+                class="p-3 px-6 pt-2 bg-white text-dkPur font-bold rounded-full baseline hover:bg-brightRedLight"
+                >Purchace the course</a
+              >
+            </div>
+          </div>
+          <!-- Image -->
+          <div class="md:w-1/2">
+            <img src="img/illustration-intro.svg" alt="" />
+          </div>
         </div>
-       
+      </div>
+      <!--  -->
+      <div class="max-w-6xl px-5 md:mx-auto mt-20 text-center mx-3">
+        <Faq/>
+    </div>
     
      
      
