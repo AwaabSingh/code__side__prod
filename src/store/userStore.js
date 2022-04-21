@@ -4,7 +4,7 @@ import { browser } from "$app/env";
 const userStore = writable(getStorageUser())
 
 // get user from local storage
-function getStorageUser()  {
+export function getStorageUser()  {
     if(browser) {
     return localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')) : null
 }
