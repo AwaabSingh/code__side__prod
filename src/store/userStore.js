@@ -1,15 +1,20 @@
 import { writable } from 'svelte/store'
+import { browser } from "$app/env";
 
 const userStore = writable(getStorageUser())
 
 // get user from local storage
 function getStorageUser()  {
+    if(browser) {
     return localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')) : null
+}
 }
 
 // set user t localstorage
 export const setStorageUser = (user) => {
+    if(browser){
      localStorage.setItem('user', JSON.stringify(user))
+    }
 }
 
 export const setUser = (user) => {
