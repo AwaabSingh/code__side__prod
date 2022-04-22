@@ -4,7 +4,6 @@
     import { fly, fade } from 'svelte/transition'
     import globalStore from '../../store/globalStore'
     import SearchIcon from '../SearchIcon.svelte'
-    import SmallLoginLink from '../SmallLoginLink.svelte'
 
     let closeSidebar = globalStore.toggleItem;
 </script>
@@ -24,8 +23,13 @@
            </a>
            <SearchIcon/>
        <ul class='mt-10 flex flex-col space-y-10'>
-          <li class=""  >
-          <SmallLoginLink/>
+          <li class=""   on:click="{() => globalStore.toggleItem('sidebar', false)}">
+            <a
+        href="/login"
+        class=" p-2 px-28 pt-2 text-lgPur rounded-xl baseline hover:bg-dkPur hover:text-white md:block border border-dkPur"
+        >
+        Login
+    </a>
           </li>
           <!-- <li class=""   on:click="{() => globalStore.toggleItem('sidebar', false)}">
             <a

@@ -1,9 +1,10 @@
 <script>
-    import { loginUser } from '../Requests/users'
+    import { loginUser} from '../Requests/users'
     import { goto } from '$app/navigation'
     import globalStore from '../store/globalStore'
+    import userStore from '../store/userStore'
 
-    
+    console.log($userStore)
     let email;
     let password;
 
