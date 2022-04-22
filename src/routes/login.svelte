@@ -14,14 +14,15 @@
         globalStore.toggleItem('alert', true, 'loading data ... please wait!')
         let user;
         user = await loginUser({ email, password})
-         if(user) {
-            //  navigate 
-            globalStore.toggleItem('alert', true, 'Login Successful')
-            goto('/')
+        // console.log();
+        //  if(user) {
+        //     //  navigate 
+        //     globalStore.toggleItem('alert', true, 'Login Successful')
+        //     goto('/')
             
-         } else {
-            globalStore.toggleItem('alert', true, 'Invalid Email or Password! Please try again', true)
-         }
+        //  } else {
+        //     globalStore.toggleItem('alert', true, 'Invalid Email or Password! Please try again', true)
+        //  }
        
          
         

@@ -21,11 +21,12 @@ export const registerUser = async ({email, fullname, password}) => {
 //  authenticate or login user with
   export const loginUser = async ({ email, password}) => {
       try {
-          const response = await axios.post(`${url}/signin`, {email, password})
+          const response = await axios.post(`api/login`, {email, password})
+          console.log(response);
 
-          if(response) {
-            setupUser(response)
-          }
+        //   if(response) {
+        //     setupUser(response)
+        //   }
 
           return response;
       } catch (error) {
