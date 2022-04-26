@@ -17,12 +17,17 @@
         <p class="max-w-sm text-center text-lgPur md:text-left">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi cumque consequuntur pariatur deleniti est, architecto err.
         </p>
-        <div class="flex justify-center md:justify-start">
+        <div class="flex justify-center md:justify-start space-x-6">
           <a
             href="/register"
             class="py-3 px-6 text-white bg-dkPur rounded-md baseline "
             >Get Started</a
           >
+          <a
+          href="/#"
+          class="py-3 px-6 text-white bg-dkPur rounded-md baseline "
+          >Teach on Code Side</a
+        >
         </div>
       </div>
       <!-- Image -->

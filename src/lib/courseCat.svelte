@@ -69,7 +69,7 @@ let screenWidth;
   {:else}
   <Swiper
   modules={[Navigation, Pagination , Scrollbar, A11y]}
-  spaceBetween={150}
+  spaceBetween={120}
   slidesPerView={3}
   navigation
   pagination={true}

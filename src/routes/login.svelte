@@ -18,7 +18,7 @@
          if(user) {
             //  navigate 
             globalStore.toggleItem('alert', true, 'Login Successful')
-            goto('/')
+            goto('/dashboard')
             
          } else {
             globalStore.toggleItem('alert', true, 'Invalid Email or Password! Please try again', true)

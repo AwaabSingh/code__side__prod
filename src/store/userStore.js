@@ -22,7 +22,7 @@ export const setUser = (user) => {
 } 
 
 export const logoutUser = () => {
-    localStorage.clear()
+    localStorage.clear();
 }
 
 

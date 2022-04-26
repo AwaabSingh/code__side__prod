@@ -3,9 +3,9 @@
       import Mycourse from '../../lib/Dashboard/Mycourse.svelte'
  </script>
 
-<div class="flex flex-wrap bg-gray-100 w-full h-screen ">
+<div class="flex  bg-gray-100 w-full h-full ">
 <Sidebar/>
-<div class="w-9/12">
+<div class="md:w-9/12 h-auto">
      <div class="p-4 text-gray-500">
          <Mycourse/>
      </div>

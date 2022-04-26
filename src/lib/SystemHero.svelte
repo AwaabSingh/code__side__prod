@@ -4,7 +4,7 @@
 
 <section id="testimonials">
     <!-- Container to heading and testm blocks -->
-    <div class="max-w-6xl px-5 mx-auto mt-20 text-center ">
+    <div class="max-w-6xl px-5 mx-auto my-20 text-center ">
       <!-- Heading -->
       <h2 class="text-xl md:text-4xl font-bold text-center">
           Systematic approach to learning
