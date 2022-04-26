@@ -1,3 +1,10 @@
+<script>
+    export let user;
+</script>
+
+
+<!-- <aside class='w-72 bg-gray-100 min-h-screen'>
+
 
 
 
@@ -8,8 +15,8 @@
                 <img src="https://randomuser.me/api/portraits/women/81.jpg" alt="" class="rounded-full border border-gray-100 shadow-sm">
             </div>
             <div class="py-5 text-center space-y-3 text-dkPur">
-                <h6 class='font-bold'>John Doe</h6>
-                 <p>jdoe@gmail.com</p>
+                <h6 class='font-bold'>{user.fullname}</h6>
+                 <p>{user.email}</p>
             </div>
       </div>
         <ul class="space-y-2 text-sm pb-10">

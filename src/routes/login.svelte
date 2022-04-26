@@ -2,9 +2,9 @@
     import { loginUser} from '../Requests/users'
     import { goto } from '$app/navigation'
     import globalStore from '../store/globalStore'
-    import userStore from '../store/userStore'
+    // import userStore from '../store/userStore'
 
-    console.log($userStore)
+    // console.log($userStore)
     let email;
     let password;
 
@@ -12,6 +12,7 @@
 
     
     const handleSubmit = async () => {
+<<<<<<< HEAD
         globalStore.toggleItem('alert', true, 'loading data ... please wait!')
         let user;
         user = await loginUser({ email, password})
@@ -19,11 +20,28 @@
             //  navigate 
             globalStore.toggleItem('alert', true, 'Login Successful')
             goto('/dashboard')
+=======
+        
+        try {
+            globalStore.toggleItem('alert', true, 'loading data ... please wait!')
+            let user;
+            user = await loginUser({ email, password})
+            // console.log(user);
+
+            if(user.status == 200){
+                console.log('200');
+                globalStore.toggleItem('alert', true, 'success')
+
+                goto('/dashboard')
+            }
             
-         } else {
-            globalStore.toggleItem('alert', true, 'Invalid Email or Password! Please try again', true)
-         }
+        } catch (error) {
+            console.log(error);
+>>>>>>> dc1cd1308b911486d34f6a93491ebe6324b32df0
+            
+        }
        
+   
          
         
     }

@@ -6,9 +6,10 @@ import globalStore from '../../store/globalStore'
 import CartBtn from '../Cart/CartBtn.svelte'
 import LoginLink from '../LoginLink.svelte'
 
+  export let user;
 </script>
 
-<header class='border-b-2 border-lgPur'>
+<header class='border-b-2 border-lgPur hide-mobile'>
 <nav class="relative container mx-auto px-6 py-1">
 <!-- Flex container -->
 <div class="flex items-center justify-between">
@@ -32,7 +33,7 @@ import LoginLink from '../LoginLink.svelte'
 
 <!-- Button -->
 <div class="flex space-x-12 justify-center items-center ml-5">
-<LoginLink/>
+<LoginLink user={user} />
 <div class="px-10">
 <CartBtn/> 
 </div>
