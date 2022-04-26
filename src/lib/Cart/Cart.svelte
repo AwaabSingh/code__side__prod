@@ -17,6 +17,7 @@
             <!-- END Cart header -->
             <!-- cart items -->
                 <!-- <ItemsList /> -->
+                <h1>Course</h1>
             <!-- end  cart items -->
             <!-- Cart footer -->
              <div class="cart-footer">

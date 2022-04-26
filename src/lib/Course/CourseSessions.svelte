@@ -5,6 +5,12 @@ import Icon from 'svelte-icons-pack/Icon.svelte';
    import RiDocumentNewspaperLine from "svelte-icons-pack/ri/RiDocumentNewspaperLine";
    import RiSystemArrowDropDownLine from "svelte-icons-pack/ri/RiSystemArrowDropDownLine";
 
+   let displaySection = false;
+
+   function toggleSession () {
+      displaySection = !displaySection;
+   }
+
 </script>
 
 <div class=" flex flex-col mt-5 md:m-5 ">
@@ -19,6 +25,7 @@ import Icon from 'svelte-icons-pack/Icon.svelte';
                             <Icon src={BsCameraVideo} color='#4F4F86' size='20'/>
                           </div>
                           <h6 class='text-sm'>4 Lessons & task</h6>
+                         
                       </div>
                     <!-- mat -->
                     <div class="flex items-center space-x-2">
@@ -31,13 +38,17 @@ import Icon from 'svelte-icons-pack/Icon.svelte';
              </div>
         </div>
         <div class="right m-auto mr-0">
-          <div class="icon">
+          <div class="icon" on:click="{toggleSession}">
             <Icon src={RiSystemArrowDropDownLine} color='#4F4F86' size='30'/>
           </div>
         </div>
       </div>
 
   
-   
+      {#if displaySection}
+      <div class="text-center ">
+        <h1>Maryam Atole</h1>
+      </div>
+      {/if}
   </div>
 

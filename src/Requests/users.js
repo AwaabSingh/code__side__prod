@@ -33,3 +33,10 @@ export const registerUser = async ({email, fullname, password}) => {
           console.log(error)
       }
   }
+
+
+
+  export const GetUser = async (data)=>{
+      const res = await axios.post(`http://localhost:3000/api/me`,data)
+      return res
+  }

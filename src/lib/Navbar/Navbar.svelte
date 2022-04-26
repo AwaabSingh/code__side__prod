@@ -1,14 +1,12 @@
 <script>
      import BigNav from './BigNav.svelte'
      import SmallNav from './SmallNav.svelte'
-     let screenWidth;
-     
+     import SideBar from './SideBar.svelte';
+     export let user;
+     console.log(user);
 </script>
 
-<svelte:window bind:innerWidth={screenWidth}/>
 
-{#if screenWidth > 768} 
-<BigNav/>
-{:else}
+<BigNav user={user} />
 <SmallNav/>
-{/if}
+<SideBar/>
