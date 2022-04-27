@@ -12,15 +12,6 @@
 
     
     const handleSubmit = async () => {
-<<<<<<< HEAD
-        globalStore.toggleItem('alert', true, 'loading data ... please wait!')
-        let user;
-        user = await loginUser({ email, password})
-         if(user) {
-            //  navigate 
-            globalStore.toggleItem('alert', true, 'Login Successful')
-            goto('/dashboard')
-=======
         
         try {
             globalStore.toggleItem('alert', true, 'loading data ... please wait!')
@@ -37,7 +28,6 @@
             
         } catch (error) {
             console.log(error);
->>>>>>> dc1cd1308b911486d34f6a93491ebe6324b32df0
             
         }
        

@@ -1,12 +1,8 @@
+
+
 <script>
     export let user;
 </script>
-
-
-<!-- <aside class='w-72 bg-gray-100 min-h-screen'>
-
-
-
 
 
     <div class="w-3/12 bg-white rounded p-3  hidden md:block">

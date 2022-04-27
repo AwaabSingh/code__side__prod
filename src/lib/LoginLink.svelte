@@ -1,9 +1,7 @@
 <script>
    
     export let user;
-
  
-
     
 </script>
 
@@ -12,8 +10,3 @@
 {:else}
 <a href="/login" class="hidden p-2 px-16 pt-2 text-lgPur rounded-xl baseline hover:bg-dkPur hover:text-white md:block border border-dkPur">Login</a>
 {/if}
-<!-- <a href="/login"
-class="hidden p-2 px-16 pt-2 text-lgPur rounded-xl baseline hover:bg-dkPur hover:text-white md:block border border-dkPur"
->
-Login
-</a> -->

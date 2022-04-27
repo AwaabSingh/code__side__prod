@@ -33,7 +33,7 @@ import LoginLink from '../LoginLink.svelte'
 
 <!-- Button -->
 <div class="flex space-x-12 justify-center items-center ml-5">
-<LoginLink user={user} />
+<LoginLink {user} />
 <div class="px-10">
 <CartBtn/> 
 </div>
