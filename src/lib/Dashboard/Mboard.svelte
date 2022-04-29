@@ -14,7 +14,7 @@
             <!-- Cart Header -->
             <div class="cart-header">
                 <button class="btn-close" on:click="{() => globalStore.toggleItem('mboard', false)}">  
-                  <i class='bx bxs-x-square' >x</i> 
+                  <i class='bx bxs-x-square' ></i> 
                 </button>
             </div>
             <nav class="w-80 flex-shrink-0 ">
@@ -109,8 +109,7 @@
   cursor: pointer;
 }
 
-.cart-header,
-.cart-footer {
+.cart-header {
   height: 5rem;
   display: flex;
   align-items: center;
@@ -126,51 +125,16 @@
 .cart-header {
   justify-content: space-between;
 }
-.cart-title {
-  margin-bottom: 0;
-  justify-self: center;
-  text-transform: capitalize;
-  letter-spacing: 0.3rem;
-}
-.cart-login {
-  text-transform: capitalize;
-  font-size: 1.4rem;
-  width: 100%;
-}
-.cart-login a {
-  text-transform: uppercase;
-  color: #6363A3;
-}
+
 @media screen and (min-width: 768px) {
   .cart-container {
     width: 30vw;
     min-width: 450px;
   }
 }
-.cart {
-  width: 85%;
-  height: inherit;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
-}
+
 .cart-header {
   justify-content: space-between;
 }
-.cart-title {
-  margin-bottom: 0;
-  justify-self: center;
-  text-transform: capitalize;
-  letter-spacing: 0.3rem;
-}
-.cart-login {
-  text-transform: capitalize;
-  font-size: 1.4rem;
-  width: 100%;
-}
-.cart-login a {
-  text-transform: uppercase;
-  color: #6363A3;
-}
+
 </style>

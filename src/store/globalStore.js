@@ -6,7 +6,7 @@ const globalStore = writable({
   alert: false,
   alertText: "default alert",
   alertDanger: false,
-  mboard: true,
+  mboard: false,
 });
 
 const store = {

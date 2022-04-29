@@ -33,14 +33,6 @@
     import {Toggle} from "$lib/utilities/actions"
 </script>
 
-<!-- <div class="flex flex-wrap bg-gray-100 w-full h-auto ">
-<Sidebar {user}/>
-    <div class="md:w-9/12">
-         <div class="p-4 text-center text-gray-500">
-            <slot/>
-         </div>
-     </div>
-    </div> -->
 
     <div class="flex min-h-screen">
        

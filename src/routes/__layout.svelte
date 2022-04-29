@@ -5,8 +5,7 @@
     import Footer from '../lib/Footer.svelte'
     import Alert from '$lib/Alert.svelte'
     import Cart from '$lib/Cart/Cart.svelte'
-    import Mboard from '$lib/Dashboard/Mboard.svelte'
-    console.log($globalStore)
+
 </script>
 
 <!-- Navbar -->

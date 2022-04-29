@@ -6,9 +6,7 @@
      // console.log(user);
 
      let screenWidth;
-     $: if (screenWidth > 800) {
-        globalStore.toggleItem('sidebar', false)
-     }
+  
 </script>
 
 <svelte:window bind:innerWidth={screenWidth}/>

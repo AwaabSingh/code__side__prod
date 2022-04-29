@@ -327,7 +327,7 @@ import { afterUpdate } from 'svelte';
           </h1>
             <div class="flex justify-center md:justify-start pt-5">
               <a
-                href="#"
+                href="/#"
                 class="p-3 px-6 pt-2 bg-white text-dkPur font-bold rounded-full baseline hover:bg-brightRedLight"
                 >Purchace the course</a
               >
