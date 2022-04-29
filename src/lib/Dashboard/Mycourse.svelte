@@ -5,7 +5,7 @@
   const cards = [0,1,2,3]
 </script>
 
-<div class="max-w-6xl px- mx-auto mt-20  ">
+<div class="max-w-6xl px- mx-auto mt-20">
   <!-- Heading -->
   <h2 class="text-xl md:text-4xl font-bold text-center">
       My Courses

@@ -1,15 +1,15 @@
 import axios from 'axios';
-import url from '../store/url'
-import setupUser from './setupUser'
+// import setupUser from './setupUser'
+
 
 // Register users
 
 export const registerUser = async ({email, fullname, password}) => {
        try {
-           const response = await axios.post(`${url}/signup`, {email, fullname, password})
-            if(response){
-               setupUser(response)
-            }
+           const response = await axios.post(`api/register`, {email, fullname, password})
+            // if(response){
+            //    setupUser(response)
+            // }
 
             return response;
        } catch (error) {
@@ -22,7 +22,7 @@ export const registerUser = async ({email, fullname, password}) => {
   export const loginUser = async ({ email, password}) => {
       try {
           const response = await axios.post(`api/login`, {email, password})
-          console.log(response);
+        //   console.log(response);
 
         //   if(response) {
         //     setupUser(response)

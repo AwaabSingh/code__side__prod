@@ -1,31 +1,3 @@
-<script context="module">
-    import axios from 'axios';
-    import {GetUser} from '../Requests/users'
-
-    export const load = async ({session})=>{
-        let u = await GetUser({'token':session.current_user.access_token})
-
-
-        if(session.current_user.access_token){
-            // return {
-            //     status:304,
-            //     redirect:'/',
-            //     body:{
-            //         'message':'user not authorize'
-            //     }
-            // }
-        }
-
-        // console.log(u);
-        // console.log(session);
-        return {
-            props:{u}
-        }
-    }
-
-</script>
-
-
 <script>
     import '../app.css'
     import Navbar from  '../lib/Navbar/Navbar.svelte'
@@ -33,20 +5,20 @@
     import Footer from '../lib/Footer.svelte'
     import Alert from '$lib/Alert.svelte'
     import Cart from '$lib/Cart/Cart.svelte'
-
-    export let u
-    console.log(u);
-    const user = u
+    import Sidebar from '$lib/Navbar/Sidebar.svelte'
 </script>
 
 <!-- Navbar -->
-<Navbar user={user} />
+<Navbar />
+{#if $globalStore.sidebar}
+	<Sidebar/>
+	{/if}
+	{#if $globalStore.cart}
+	<Cart/>
+	{/if}
 
-{#if $globalStore.cart}
-<Cart/>
-{/if}
-{#if $globalStore.alert}
- <Alert/>
-{/if}
+	{#if $globalStore.alert}
+		<Alert/>
+	{/if}
 <slot/>
 <Footer/>

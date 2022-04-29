@@ -5,6 +5,8 @@
     import RiSystemCloseFill from "svelte-icons-pack/ri/RiSystemCloseFill";
     import { fly, fade } from 'svelte/transition';
     import SearchIcon from '../SearchIcon.svelte';
+    import globalStore from '../../store/globalStore'
+import SmallLoginLink from '$lib/SmallLoginLink.svelte';
     
     
     // onMount(()=>{
@@ -19,41 +21,36 @@
 
 
 </script>
-    <div id="mobile-menu" class="sidebar-container" transition:fly={{ x: -1000}}>
-        <div class="sidebar" transition:fade={{delay: 400 }}>
-            <!-- Header -->
-               <div class="sidebar-header">
-                   <button class='btn-close' on:click="{() => {Toggle('mobile-menu','active')}}">
-                    <i class='bx bx-x is-red'></i>                  
-                  </button>
-               </div>
-           <!-- logo -->
-           <a href="/" class='nav-logo'>
-            <img src="/images/cs_logo.svg" alt="code side acdemy" class='w-40 '>
-           </a>
-           <SearchIcon/>
-       <ul class='mt-10 flex flex-col space-y-10'>
-          <li class="">
-            <a
-        href="/login"
-        class=" p-2 px-28 pt-2 text-lgPur rounded-xl baseline hover:bg-dkPur hover:text-white md:block border border-dkPur"
-        >
-        Login
-    </a>
-          </li>
-          <!-- <li class=""   on:click="{() => globalStore.toggleItem('sidebar', false)}">
-            <a
-        href="/register"
-        class=" p-2 px-28 pt-2 text-lgPur rounded-xl baseline hover:bg-dkPur hover:text-white md:block border border-dkPur"
-        >
-        register
-    </a>
-          </li> -->
-       </ul>
-            
-        </div>  
-   
-    </div>
+<div id="mobile-menu" class="sidebar-container" transition:fly={{ x: -1000}}>
+  <div class="sidebar" transition:fade={{delay: 400 }}>
+      <!-- Header -->
+         <div class="sidebar-header">
+             <button class='btn-close' on:click="{() => {Toggle('mobile-menu','active')}}">
+              <i class='bx bx-x is-red'></i>                  
+            </button>
+         </div>
+     <!-- logo -->
+     <a href="/" class='nav-logo'>
+      <img src="/images/cs_logo.svg" alt="code side acdemy" class='w-40 '>
+     </a>
+     <SearchIcon/>
+ <ul class='mt-10 flex flex-col space-y-10'>
+     <li class="">
+    <!--  <a
+  href="/login"
+  class=" p-2 px-28 pt-2 text-lgPur rounded-xl baseline hover:bg-dkPur hover:text-white md:block border border-dkPur"
+  >
+  Login
+</a> -->
+<SmallLoginLink/>
+
+    </li>
+
+ </ul>
+      
+  </div>  
+
+</div>
 
 
     <style>

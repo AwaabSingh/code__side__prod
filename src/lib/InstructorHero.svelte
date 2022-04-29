@@ -26,7 +26,7 @@
       </div>
       <!-- Image -->
       <div class="md:w-1/2 ">
-        <img  src="/images/hero.jpg" alt="" class='rounded-xl ' />
+        <img  src="/images/tutort.png" alt="" class='rounded-xl w-60 text-center md:w-[80%] pb-20' />
       </div>
     </div>
   </section>

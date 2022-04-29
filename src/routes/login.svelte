@@ -2,9 +2,7 @@
     import { loginUser} from '../Requests/users'
     import { goto } from '$app/navigation'
     import globalStore from '../store/globalStore'
-    // import userStore from '../store/userStore'
 
-    // console.log($userStore)
     let email;
     let password;
 
@@ -17,15 +15,15 @@
             globalStore.toggleItem('alert', true, 'loading data ... please wait!')
             let user;
             user = await loginUser({ email, password})
-            // console.log(user);
+
 
             if(user.status == 200){
                 console.log('200');
                 globalStore.toggleItem('alert', true, 'success')
 
                 goto('/dashboard')
-            }
-            
+            } 
+            // console.log(user)
         } catch (error) {
             console.log(error);
             

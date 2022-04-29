@@ -6,7 +6,7 @@ import globalStore from '../../store/globalStore'
 import CartBtn from '../Cart/CartBtn.svelte'
 import LoginLink from '../LoginLink.svelte'
 
-  export let user;
+  // export let user;
 </script>
 
 <header class='border-b-2 border-lgPur hide-mobile'>
@@ -33,7 +33,7 @@ import LoginLink from '../LoginLink.svelte'
 
 <!-- Button -->
 <div class="flex space-x-12 justify-center items-center ml-5">
-<LoginLink {user} />
+ <LoginLink/>
 <div class="px-10">
 <CartBtn/> 
 </div>

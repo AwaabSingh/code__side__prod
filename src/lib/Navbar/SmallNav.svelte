@@ -6,12 +6,12 @@
     import AiOutlineMenu from "svelte-icons-pack/ai/AiOutlineMenu";
     import {Toggle} from "$lib/utilities/actions"
 
-    // let openSidebar = globalStore.toggleItem
+    let openSidebar = globalStore.toggleItem
 </script>
-
 <header class='border-b border-lgPur show-mobile'>
   <nav class='relative container mx-auto px-6 py-3'>
     <div class="flex items-center justify-between">
+      
         <!-- Logo -->
         <div class="pt-2 flex space-x-12">
           <a href='/' class="">
@@ -27,8 +27,10 @@
           </button>
         </div>
         </div>
-      
-        
-  </nav>
+
+          <!-- <button class="btn-sidebar-toggle" on:click="{() => {openSidebar('sidebar', true)}}">
+            <i class="fas fa-bars">-</i>
+        </button> -->
+
 </header>
 

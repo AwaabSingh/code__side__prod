@@ -2,7 +2,7 @@
 
 </script>
 
-<section  id="hero" class='mb-40'>
+<section  id="hero" class='mb-40' style="background-image: url('/images/bannerimg1.gif')">
     <!-- Flex Container -->
     <div
       class="container flex flex-col-reverse items-center px-6 mx-auto pt-10 space-y-0 md:space-y-0 md:flex-row"

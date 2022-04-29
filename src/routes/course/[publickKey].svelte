@@ -1,5 +1,6 @@
+
 <script>
-    import { page } from '$app/stores'
+    import { page, session } from '$app/stores'
     import Icon from 'svelte-icons-pack/Icon.svelte';
     import BiLeftArrowAlt from "svelte-icons-pack/bi/BiLeftArrowAlt";
     import AiOutlineStar from "svelte-icons-pack/ai/AiOutlineStar";
@@ -13,18 +14,69 @@
     import AboutInstructor from '$lib/Course/AboutInstructor.svelte'
     import Faq from '$lib/Course/Faq.svelte'
     import globalStore from '../../store/globalStore'
+    import url from '../../store/url'
+    import axios from 'axios'
+import { goto } from '$app/navigation';
+import { afterUpdate } from 'svelte';
 
+    const userToken = $session.current_user.access_token;
      let pk = $page.params.publickKey
     let courseData = {}
+    let cartData = {}
+    let wishData = {}
 
     async function courses () {
         courseData = await getCourse(pk)
     }
   
     courses();
+
+
+    // Add to cart func
+    async function addToCart() {
+      try {
+        const config = {
+            headers:  {
+            'user-token': ` ${userToken}`,
+             'content-type': 'application/json'
+      }}
+        
+                              cartData.courseKey = pk;
+         const response = await axios.post(`${url}/addcart`, cartData, config)
+        
+        
+      } catch (error) {
+        console.log(error)
+        
+      }
+        
+     }
     
+     addToCart()
+    //  add wish func
+    const addWishlist = async () => {
+       if(!userToken) {
+          goto('/login')
+       }else {
+         try {
+          const config = {
+            headers:  {
+              'content-type': 'application/json',
+            'user-token': ` ${userToken}`,
+            'Content-Type' : 'application/x-www-form-urlencoded'     
+      }}
+        
+                              wishData.courseKey = pk;
+         const response = await axios.post(`${url}/addwishlist`, wishData, config)
+         goto('/dashboard/wishlist')
+         } catch (error) {
+           console.log(error)
+         }
+       }
+    }
     const start = [0,1,2,3,]
     const secs = [0,1,2]
+
   
 </script>
  
@@ -76,12 +128,14 @@
                 <h1 class='text-dkPur font-bold text-3xl'>&#8358;{courseData.price}</h1>
             </div>
             <!-- card & which -->
-               <div class="flex space-x-40">
+               <div class="flex space-x-4 md:space-x-20">
                    <!-- butten -->
-                   <button href="" class="px-5 py-3 text-white bg-dkPur rounded-xl" on:click="{() => globalStore.toggleItem('cart', true)}">Add to cart</button>
-                   <div class="mt-2 mr-10 md:pr-40">
-                       <Icon src={AiOutlineHeart} color='red' size='35'/>
-                   </div>
+                   <button href="" class="px-5 py-3 text-white bg-dkPur rounded-xl" on:click="{() => {
+                     addToCart()
+                     globalStore.toggleItem('cart', true)}}">Add to cart</button>
+                   <button class="px-5 py-3 text-white bg-dkPur rounded-xl" on:click={addWishlist}>
+                    Add to wishlist
+                   </button>
                </div>
       
         </div>

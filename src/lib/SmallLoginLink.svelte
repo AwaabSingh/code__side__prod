@@ -1,30 +1,28 @@
 <script>
-   import { logoutUser } from '../store/userStore'
+
     import globalStore from '../store/globalStore'
-    import { onMount } from 'svelte'
 
-//     let jwt;
+    import {  session } from '$app/stores'
+    
 
-//    onMount(() => {
-       
-//        jwt = $user.detail.access_token
-//    })
-
+    const userToken = $session.current_user.access_token;
   
 </script>
 
 
-<a  on:click="{() => {
-    logoutUser()
-    globalStore.toggleItem('sidebar', false)}}"
-    href="/"
+{#if userToken}
+<a  on:click="{() => globalStore.toggleItem('sidebar', false)}"
+    href="/dashboard"
     class=" p-2 px-32 pt-2 text-lgPur rounded-xl baseline hover:bg-dkPur hover:text-white md:block border border-dkPur"
     >
-    Logout
+    Dashboard
 </a>
+
+{:else}
 <a  on:click="{() => globalStore.toggleItem('sidebar', false)}"
     href="/login"
     class=" p-2 px-32 pt-2 text-lgPur rounded-xl baseline hover:bg-dkPur hover:text-white md:block border border-dkPur"
     >
     Login
 </a>
+{/if}

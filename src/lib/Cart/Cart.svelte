@@ -1,6 +1,11 @@
 <script>
     import globalStore from '../../store/globalStore'
     import { fly, fade, blur } from 'svelte/transition'
+    import {  session } from '$app/stores'
+import CartItem from './CartItem.svelte';
+    
+
+    const userToken = $session.current_user.access_token;
     
 </script>
 
@@ -10,25 +15,24 @@
             <!-- Cart Header -->
             <div class="cart-header">
                 <button class="btn-close" on:click="{() => globalStore.toggleItem('cart', false)}">  
-                    <i class="fas fa-window-close"></i>
+                  <i class='bx bxs-x-square' ></i> 
                 </button>
                 <h2 class="cart-title">Your Cart</h2>
             </div>
             <!-- END Cart header -->
             <!-- cart items -->
-                <!-- <ItemsList /> -->
-                <h1>Course</h1>
+                <CartItem/>
             <!-- end  cart items -->
             <!-- Cart footer -->
              <div class="cart-footer">
-                 <!-- {#if $user.jwt} -->
-                    <!-- <a href="/checkout" class='btn btn-primary btn-block'  on:click="{() => globalStore.toggleItem('cart', false)}">Checkout</a> -->
-                 <!-- {:else} -->
+                 {#if userToken}
+                    <a href="/#" class='btn btn-primary btn-block'  on:click="{() => globalStore.toggleItem('cart', false)}">Checkout</a>
+                 {:else}
                  <p class="cart-login"> 
                      in order to process to  checkout please
                      <a href="/login"  on:click="{() => globalStore.toggleItem('cart', false)}">Login </a>
                  </p>
-                 <!-- {/if} -->
+                 {/if}
              </div>
             <!-- end Cart footer -->
         </div>
