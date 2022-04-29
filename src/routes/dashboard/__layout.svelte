@@ -21,10 +21,16 @@
 </script>
 
 <script>
-    import Sidebar from '$lib/Dashboard/SideBar.svelte'
+    import Sidebar from '$lib/Dashboard/SideBar.svelte';
+    import globalStore from '../../store/globalStore'
+    import Mboard from '$lib/Dashboard/Mboard.svelte'
     
     export let u;
     const user = u;
+
+    import Icon from 'svelte-icons-pack/Icon.svelte';
+    import AiOutlineMenu from "svelte-icons-pack/ai/AiOutlineMenu";
+    import {Toggle} from "$lib/utilities/actions"
 </script>
 
 <!-- <div class="flex flex-wrap bg-gray-100 w-full h-auto ">
@@ -39,8 +45,17 @@
     <div class="flex min-h-screen">
        
         <Sidebar {user}/>
+        {#if $globalStore.mboard}
+        <Mboard {user}/>
+        {/if}
+        
       
         <div class="flex flex-col w-full mx-5">
+        <div class="md:hidden py-5">
+            <div class="bg-white py-2 px-3 shadow-xl  w-12 rounded-full" on:click={() => globalStore.toggleItem('mboard', true)}>
+                <Icon src={ AiOutlineMenu} color="#4F4F86" size="25"/>
+            </div>
+        </div>
          
          <slot/>
         </div>

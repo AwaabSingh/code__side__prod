@@ -5,20 +5,20 @@
     import Footer from '../lib/Footer.svelte'
     import Alert from '$lib/Alert.svelte'
     import Cart from '$lib/Cart/Cart.svelte'
-    import Sidebar from '$lib/Navbar/Sidebar.svelte'
+    import Mboard from '$lib/Dashboard/Mboard.svelte'
+    console.log($globalStore)
 </script>
 
 <!-- Navbar -->
 <Navbar />
-{#if $globalStore.sidebar}
-	<Sidebar/>
-	{/if}
+
 	{#if $globalStore.cart}
 	<Cart/>
 	{/if}
 
-	{#if $globalStore.alert}
-		<Alert/>
-	{/if}
+	
+    {#if globalStore.alert}
+  <Alert/>
+{/if}
 <slot/>
 <Footer/>
