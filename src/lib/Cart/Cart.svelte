@@ -2,7 +2,7 @@
     import globalStore from '../../store/globalStore'
     import { fly, fade, blur } from 'svelte/transition'
     import {  session } from '$app/stores'
-import CartItem from './CartItem.svelte';
+import CartItem from './CartItem.svelte'
     
 
     const userToken = $session.current_user.access_token;
