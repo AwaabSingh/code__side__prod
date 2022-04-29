@@ -2,9 +2,7 @@
      import BigNav from './BigNav.svelte'
      import SmallNav from './SmallNav.svelte'
      import globalStore from '../../store/globalStore'
-     // export let user;
-     // console.log(user);
-
+    
      let screenWidth;
   
 </script>
