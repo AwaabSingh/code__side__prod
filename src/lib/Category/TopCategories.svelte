@@ -18,12 +18,27 @@
         {#each catgories as cat}
          <div class="bg-white px-5 py-3 rounded-xl shadow-lg mb-3 ">
               <!-- text -->
-           <div class="pb-3 font-bold text-lgPur">
+           <div class="pb-3 font-bold text-lgPur uppercase">
             <h4>{cat.name}</h4>
         </div>
         <!-- Image -->
         <div class="pb-2">
+            {#if cat.name === "Web development"}
+            <img src="/images/webdev-01.png" alt= "" class='w-auto rounded-lg'>
+            {:else if cat.name === "Web3"}
+            <img src="/images/web3_w3.png" alt= "" class='w-auto rounded-lg'>
+            {:else if cat.name === "Data Science"}
+            <img src="/images/datascience_ds.png" alt= "" class='w-auto rounded-lg'>
+            {:else if cat.name === "Blockchain technology"}
+            <img src="/images/blockchain-01.png" alt= "" class='w-auto rounded-lg'>
+            {:else if cat.name === "Machine learning"}
+            <img src="/images/machine-learning-01.png" alt= "" class='w-auto rounded-lg'>
+            {:else if cat.name === "Computer Science"}
+            <img src="/images/compscience-01.png" alt= "" class='w-auto rounded-lg'>
+            {:else}
             <img src="/images/hero.jpg" alt= "" class='w-auto rounded-lg'>
+            {/if}
+            
         </div>
          </div>
          {/each}
