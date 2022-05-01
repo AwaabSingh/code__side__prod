@@ -13,21 +13,21 @@
           <div class="mx-5 my-5">
               <img src="/images/hero.jpg" alt="" class='w-20z'>
                <div class="py-5  md:text-left">
-                   <h3 class='text-lgPur py-5 font-bold text-xl md:text-2xl'>Purchace a course</h3>
+                   <h3 class='text-lgPur py-5 font-bold text-xl md:text-2xl'>Learn</h3>
                      <p class='text-gray-500 text-sm md:text-md'>Lorem ipsum dolor sit. Lorem ipsum dolor sit. Lorem ipsum dolor sit.</p>
                </div>
           </div>
           <div class="mx-5 my-5">
             <img src="/images/hero.jpg" alt="" class='w-20z'>
             <div class="py-5  md:text-left">
-                <h3 class='text-lgPur py-5 font-bold text-xl md:text-2xl'>Purchace a course</h3>
+                <h3 class='text-lgPur py-5 font-bold text-xl md:text-2xl'>Teach</h3>
                   <p class='text-gray-500 text-sm md:text-md'>Lorem ipsum dolor sit. Lorem ipsum dolor sit. Lorem ipsum dolor sit.</p>
             </div>
         </div>
         <div class="mx-5 my-5">
             <img src="/images/hero.jpg" alt="" class='w-20z'>
             <div class="py-5  md:text-left">
-                <h3 class='text-lgPur py-5 font-bold text-xl md:text-2xl'>Purchace a course</h3>
+                <h3 class='text-lgPur py-5 font-bold text-xl md:text-2xl'>Earn</h3>
                   <p class='text-gray-500 text-sm md:text-md'>Lorem ipsum dolor sit. Lorem ipsum dolor sit. Lorem ipsum dolor sit.</p>
             </div>
         </div>

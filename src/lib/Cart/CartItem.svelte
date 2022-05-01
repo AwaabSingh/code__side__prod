@@ -23,7 +23,7 @@
          const response = await axios.get(`${url}/getcart`, config)
          cartData = response.data.detail
 
-
+        // console.log(cartData.);
       } catch (error) {
         console.log(error)
         
