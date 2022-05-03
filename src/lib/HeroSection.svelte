@@ -26,7 +26,7 @@
 		</div>
 		<!-- Image -->
 		<div class="w-1/2 ">
-			<img src="/images/codesideheader.svg" alt="" class="rounded-xl " />
+			<img src="/images/codesideheader-nobg.svg" alt="" class="rounded-xl " />
 		</div>
 	</div>
 </section>

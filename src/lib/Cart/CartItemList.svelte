@@ -27,7 +27,7 @@
 	// removeItem()
 </script>
 
-<div class="cart-item px-3 py-5 shadow-lg rounded-xl">
+<div class="cart-item px-3 py-5 shadow-lg">
 	<img src="/images/hero.jpg" alt={cartItem.title} />
 	<div class="flex justify-between">
 		<div class="">

@@ -12,7 +12,7 @@ import LoginLink from '../LoginLink.svelte'
 <header class='border-b-2 border-lgPur hide-mobile'>
 <nav class="relative container mx-auto px-6 py-1">
 <!-- Flex container -->
-<div class="flex items-center justify-between">
+<div class="flex items-center justify-between sticky">
 <!-- Logo -->
 <div class="pt-2 flex space-x-20">
 <a href='/' class="">
