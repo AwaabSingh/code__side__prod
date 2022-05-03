@@ -1,7 +1,12 @@
-import adapter from '@sveltejs/adapter-node';
 
-export default {
+// import adapter from '@sveltejs/adapter-auto';
+import vercel from '@sveltejs/adapter-vercel'
+
+/** @type {import('@sveltejs/kit').Config} */
+const config = {
 	kit: {
-		adapter: adapter()
+		adapter: vercel()
 	}
 };
+
+export default config;
