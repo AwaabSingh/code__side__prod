@@ -30,6 +30,7 @@ import LoginLink from '../LoginLink.svelte'
      
   </div>
 </div>
+<!-- text-s -->
 
 <!-- Button -->
 <div class="flex space-x-12 justify-center items-center ml-5">
