@@ -5,7 +5,7 @@ export const handle = async ({event,resolve})=>{
         // we get the cookie from the header and parse it 
         const cookies = cookie.parse(event.request.headers.get('cookie')||'')
         // console.log(cookies.access_token);
-        event.locals.user = cookie;
+        event.locals.user = cookies;
 
         //here we check if the cookie exist (contain access_token) we set the 
         // auth state to true  if not to false 
