@@ -82,7 +82,7 @@ import LoginLink from '../LoginLink.svelte'
           <a href="/login" class='text-center'>Login</a>
         </div>
         <div class="text-dkPur rounded-2xl border border-lgPur  text-center  px-4 py-2 m-2 hover:bg-dkPur hover:text-white">
-          <a href="/login" class=''>Register</a>
+          <a href="/register" class=''>Register</a>
         </div>
       </div>
   </div>
