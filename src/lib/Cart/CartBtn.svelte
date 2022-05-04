@@ -9,7 +9,7 @@
     // console.log(total)
 </script>
 
-<div class="font-sans block  lg:inline-block lg:mt-0 lg:ml-6 align-middle text-black hover:text-gray-700">
+<div class="font-sans block  lg:inline-block lg:mt-0 lg:ml-4 align-middle text-black hover:text-gray-700">
     <div href="#/" role="button" class="relative flex">
       <button on:click={() => globalStore.toggleItem('cart', true)}>
         <Icon color="#4F4F86" size='30' src={AiOutlineShoppingCart} />
