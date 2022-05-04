@@ -11,3 +11,13 @@ export const getCategories = async () => {
           console.log(error)
       }
 }
+
+export const getCourseByCategory = async (pk) => {
+	try {
+		const response = await axios.get(`${url}/getCourse?categoriespbk=${pk}`);
+		console.log(response.data.detail);
+		return response.data.detail;
+	} catch (error) {
+		console.log(error);
+	}
+};

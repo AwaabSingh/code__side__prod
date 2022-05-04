@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<section id="hero" class="mb-40" style="background-image: url('/images/bannerimg1.gif')">
+<section id="hero" class="mb-40 bgimg">
 	<!-- Flex Container -->
 	<div
 		class="container flex flex-col-reverse items-center px-6 mx-auto pt-10 space-y-0 md:space-y-0 md:flex-row"
@@ -26,7 +26,14 @@
 		</div>
 		<!-- Image -->
 		<div class="w-1/2 ">
-			<img src="/images/codesideheader-nobg.svg" alt="" class="rounded-xl " />
+			<img src="/images/codeside_nodot.png" alt="" class="rounded-xl " />
 		</div>
 	</div>
 </section>
+
+<style>
+	.bgimg {
+   background: url('/images/cblandinpg.png') no-repeat ;
+
+	}
+</style>

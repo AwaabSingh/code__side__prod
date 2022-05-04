@@ -18,11 +18,14 @@
         {#each catgories as cat}
          <div class="bg-white px-5 py-3 rounded-xl shadow-lg mb-3 ">
               <!-- text -->
+              <a href={`/category/${cat.publickKey}`}>
            <div class="pb-3 font-bold text-lgPur uppercase">
             <h4>{cat.name}</h4>
         </div>
+        </a>
         <!-- Image -->
         <div class="pb-2">
+            <a href={`/category/${cat.publickKey}`}>
             {#if cat.name === "Web development"}
             <img src="/images/webdev-01.png" alt= "" class='w-auto rounded-lg'>
             {:else if cat.name === "Web3"}
@@ -38,11 +41,17 @@
             {:else}
             <img src="/images/hero.jpg" alt= "" class='w-auto rounded-lg'>
             {/if}
-            
+            </a>
         </div>
          </div>
          {/each}
          {/await}
       </div>
       
+         <!-- <div class="pb-2">
+            <a href={`/category/${cat.publickKey}`}>
+             <img src={`${url}/static/${cat.banner}`} alt= "" class='w-auto rounded-lg'>
+             </a>
+            
+        </div> -->
  </section>

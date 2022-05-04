@@ -6,7 +6,7 @@
     let email;
     let password;
 
-    $: isEmpty =  !email || !password || $globalStore.alert 
+    $: isEmpty =  !email || !password 
 
     
     const handleSubmit = async () => {
@@ -21,7 +21,7 @@
                 console.log('200');
                 globalStore.toggleItem('alert', true, 'success')
 
-                goto('/dashboard')
+                goto('/')
             } 
             // console.log(user)
         } catch (error) {

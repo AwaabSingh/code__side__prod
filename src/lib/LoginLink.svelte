@@ -7,10 +7,7 @@ import { goto } from '$app/navigation';
 
     const userToken = $session.current_user.access_token;
  
-    const logout = async () => {
-     sessionStorage.clear();  
-     goto('/')
-    }
+    
     
 </script>
 

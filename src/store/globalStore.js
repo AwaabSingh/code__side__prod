@@ -1,12 +1,11 @@
-import { writable } from "svelte/store";
+ import { writable } from "svelte/store";
 
 const globalStore = writable({
   sidebar: false,
   cart: false,
-  alert: false,
+  alert: true,
   alertText: "default alert",
-  alertDanger: false,
-  mboard: false,
+  alertDanger: false
 });
 
 const store = {

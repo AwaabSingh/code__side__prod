@@ -2,9 +2,7 @@
     import Icon from 'svelte-icons-pack/Icon.svelte';
     import AiOutlineShoppingCart from "svelte-icons-pack/ai/AiOutlineShoppingCart";
     import globalStore from '../../store/globalStore'
-    import cart from '../../store/cartStore'
 
-    console.log($cart)
   
 
      $: total = 0

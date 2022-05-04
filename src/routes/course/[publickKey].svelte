@@ -4,7 +4,6 @@
     import Icon from 'svelte-icons-pack/Icon.svelte';
     import BiLeftArrowAlt from "svelte-icons-pack/bi/BiLeftArrowAlt";
     import AiOutlineStar from "svelte-icons-pack/ai/AiOutlineStar";
-    import AiOutlineHeart from "svelte-icons-pack/ai/AiOutlineHeart";
     import CourseLevel from '$lib/Course/CourseLevel.svelte'
     import BiCheck from "svelte-icons-pack/bi/BiCheck";
     import CourseSessions from '$lib/Course/CourseSessions.svelte'
@@ -17,7 +16,6 @@
     import url from '../../store/url'
     import axios from 'axios'
 import { goto } from '$app/navigation';
-import { afterUpdate } from 'svelte';
 
     const userToken = $session.current_user.access_token;
      let pk = $page.params.publickKey

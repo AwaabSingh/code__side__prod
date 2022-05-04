@@ -7,8 +7,9 @@ export const getCourses = async () => {
     try {
         const response = await axios.get(`${url}/allcourse`)
 
+     
        return response.data.detail;
-
+       
     } catch (error) {
         console.log(error)
     }
