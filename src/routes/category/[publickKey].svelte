@@ -27,7 +27,7 @@ import Loading from '$lib/Loading.svelte';
             <!-- Article -->
             <article class="overflow-hidden rounded-lg shadow-lg">
 
-                <a href="#">
+                <a href={`/course/${course.publickKey}`}>
                     <img alt="Placeholder" class="block h-auto w-full" src="https://picsum.photos/600/400/?random">
                 </a>
 
@@ -39,6 +39,14 @@ import Loading from '$lib/Loading.svelte';
                     </h1>
                    
                 </header>
+                <article class='flex items-center justify-between leading-none p-2 md:p-4'>
+                    <!-- Rating -->
+                       <div class="">
+                           4.5
+                       </div>
+                    <!-- Duration -->
+                      <div class="">16 Hrs</div>
+                </article>
 
                 <footer class="flex items-center justify-between leading-none p-2 md:p-4">
                     <div class="">

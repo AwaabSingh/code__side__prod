@@ -16,7 +16,7 @@
 				deleniti est, architecto err.
 			</p>
 			<div class="flex justify-center md:justify-start space-x-6">
-				<a href="/register" class="py-3 px-6 text-white bg-dkPur rounded-md baseline "
+				<a href="/register" class="py-3 px-6 text-dkPur border border-lgPur bg-transparent rounded-md baseline hover:text-white hover:bg-dkPur"
 					>Get Started</a
 				>
 				<a href="/#" class="py-3 px-6 text-white bg-dkPur rounded-md baseline "
