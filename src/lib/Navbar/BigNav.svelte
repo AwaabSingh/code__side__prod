@@ -54,7 +54,9 @@ import LoginLink from '../LoginLink.svelte'
     <img src="/images/cs_logo.svg" alt="code side acdemy" class='w md:w-40'> 
    </a>
     </div>
-     <div class="font-bold text-lg text-dkPur hidden md:flex  pr-3 ">Courses</div>
+     <div class="font-bold text-lg text-dkPur hidden md:flex  pr-3 ">
+       <a href="/course">Courses</a>
+     </div>
     <span class="w-screen md:w-1/3 h-10 bg-lgPur cursor-pointer border border-gray-300 text-sm rounded-full flex ">
       <input type="search" name="serch" placeholder="Search For Courses ..."
         class="flex-grow px-4 rounded-l-full rounded-r-full text-sm focus:outline-none">
@@ -79,10 +81,11 @@ import LoginLink from '../LoginLink.svelte'
           <CartBtn/>
         </div>
         <div class="text-dkPur rounded-2xl border border-lgPur  text-center  px-4 py-2 m-2 hover:bg-dkPur hover:text-white">
-          <a href="/login" class='text-center'>Login</a>
+          <a href="/login" class=''>Login</a>
         </div>
-        <div class="text-dkPur rounded-2xl border border-lgPur  text-center  px-4 py-2 m-2 hover:bg-dkPur hover:text-white">
-          <a href="/register" class=''>Register</a>
+
+         <div class="text-white bg-dkPur rounded-2xl border hover:border-lgPur  hover:bg-transparent hover:text-dkPur text-center  px-4 py-2 m-2 ">
+          <a href="/register" class='text-center'>Register</a>
         </div>
       </div>
   </div>

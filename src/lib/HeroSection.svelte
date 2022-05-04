@@ -8,10 +8,10 @@
 	>
 		<!-- Left item -->
 		<div class="flex flex-col md:mb-32  space-y-5 md:space-y-8 md:w-1/2 mt-10">
-			<h1 class=" text-4xl font-bold text-center md:text-5xl md:mt-5 md:text-left">
+			<h1 class=" text-6xl font-bold text-center md:text-5xl md:mt-5 md:text-left text-dkPur">
 				Platform for training
 			</h1>
-			<p class="max-w-sm text-center text-lgPur md:text-left">
+			<p class="max-w-sm text-center  md:text-left font-medium">
 				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi cumque consequuntur pariatur
 				deleniti est, architecto err.
 			</p>
@@ -19,7 +19,7 @@
 				<a href="/register" class="py-3 px-6 text-dkPur border border-lgPur bg-transparent rounded-md baseline hover:text-white hover:bg-dkPur"
 					>Get Started</a
 				>
-				<a href="/#" class="py-3 px-6 text-white bg-dkPur rounded-md baseline "
+				<a href="/#" class="py-3 px-6 text-white bg-dkPur rounded-md baseline hover:text-dkPur hover:bg-transparent hover:border hover:border-lgPur "
 					>Teach on Code Side</a
 				>
 			</div>

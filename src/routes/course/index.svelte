@@ -1,28 +1,18 @@
 <script>
-     import { page } from  '$app/stores'
-import Loading from '$lib/Loading.svelte';
-     import { getCourseByCategory } from '../../Requests/category'
-     import comma  from '../../store/numcomma'
-     
-     let pk = $page.params.publickKey;
-     console.log($page)
-     let CatCourse = [];
+     import Loading from '$lib/Loading.svelte';
+import { claim_svg_element } from 'svelte/internal';
+import { getCourses } from '../../Requests/courses'
+import comma from '../../store/numcomma'
+</script>
 
-     async function CatReq() {
-          
-     CatCourse = await getCourseByCategory(pk);
-  
-     }
-
-     CatReq()
-   </script>
-
-<main id="bg" class="py-12">
-<div class="container my- mx-auto px-4 md:px-12">
+<div class="container my-12 mx-auto px-4 md:px-12">
+      <h1 class='text-dkPur font-bold text-4xl pb-10'>All Courses Available</h1>
     <div class="flex flex-wrap -mx-1 lg:-mx-4">
 
-        <!-- Column -->
-       {#each CatCourse as course}
+        {#await getCourses()}
+            <Loading/>
+        {:then courses}
+            {#each courses as course}
            <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
 
             <!-- Article -->
@@ -58,7 +48,7 @@ import Loading from '$lib/Loading.svelte';
                         Course Price
                     </div>
                     <div class="no-underline ">
-                        <span class="text-gray-500 text-md font-bold">&#8358;{comma(course.price)}</span>
+                        <span class="text-gray-500 text-md font-bold">&#8358;{course.price}</span>
                         <i class="fa fa-heart"></i>
                     </div>
                 </footer>
@@ -67,20 +57,12 @@ import Loading from '$lib/Loading.svelte';
             <!-- END Article -->
 
         </div>
-        {:else}
-         <Loading/>
-       {/each}
+        {/each}
+        {/await}
+        <!-- Column -->
+        
         <!-- END Column -->
 
 
     </div>
 </div>
-</main>
-<style>
-    /* #bg {
-         background-image: linear-gradient(to right bottom, #fff, #545498) ,url('../img/hero.jpg');
-  background-size: cover;
-  background-position: top;
-  position: relative;
-    } */
-</style>

@@ -16,7 +16,7 @@
 
 <svelte:window bind:innerWidth={screenWidth} />
 
-<section id="course__cat" class="bg-dkPur  pb-10 ">
+<section id="course__cat" class="bgImg  pb-10 ">
 	<div class="md:px-8 py-6 text-center md:text-left md:mx-8">
 		<h1 class="font-bold text-white text-xl md:text-4xl py-3">Choose a course that you like</h1>
 	</div>
@@ -88,3 +88,9 @@
 
 	<!-- </Swiper> -->
 </section>
+
+<style>
+	.bgImg {
+		 background: linear-gradient(to bottom, #6363A3 60% , white 40%);
+	}
+</style>

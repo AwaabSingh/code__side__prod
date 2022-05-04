@@ -16,6 +16,7 @@
     import url from '../../store/url'
     import axios from 'axios'
 import { goto } from '$app/navigation';
+import Loading from '$lib/Loading.svelte';
 
     const userToken = $session.current_user.access_token;
      let pk = $page.params.publickKey
@@ -110,6 +111,8 @@ import { goto } from '$app/navigation';
             <div class="mx-5 flex space-x-2 mt-1">
                 {#each start as stt}
                 <Icon src={AiOutlineStar} size='20' color ='#F1A51F'/>
+                {:else}
+                 <Loading/>
                 {/each}
             </div>
             <div class="text-dkPur pl-12">
