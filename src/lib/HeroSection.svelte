@@ -25,7 +25,7 @@
 			</div>
 		</div>
 		<!-- Image -->
-		<div class="w-1/2 ">
+		<div class="w-1/2 lg:pl-36">
 			<img src="/images/codeside_nodot.png" alt="" class="rounded-xl " />
 		</div>
 	</div>
