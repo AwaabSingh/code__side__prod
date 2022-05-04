@@ -25,8 +25,17 @@
         </div>
       </div>
       <!-- Image -->
-      <div class="md:w-1/2 ">
+      <div class="md:w-1/2 bgImg">
         <img  src="/images/tutort.png" alt="" class='rounded-xl w-60 text-center md:w-[80%] pb-20' />
       </div>
     </div>
   </section>
+
+  <style>
+     .bgImg {
+       background-image: url('/images/cbteacher.png');
+       background-size: cover;
+       /* background-position: ; */
+       position: relative;
+     }
+  </style>
