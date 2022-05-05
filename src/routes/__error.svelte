@@ -36,7 +36,7 @@
 		<div class="flex items-center w-full h-full max-w-4xl mx-auto">
 			<img
 				class="object-cover w-full"
-				src="/svg/404-error-with-broken-robot-pana.svg"
+				src="/images/error.svg"
 				alt="Error"
 			/>
 		</div>

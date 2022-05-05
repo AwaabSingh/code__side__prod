@@ -33,16 +33,16 @@
 		<div class="p-5">
 			<ul>
 				<p class="text-gray-800 font-bold text-2xl pb-4">Product</p>
-				<li class="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+				<li class="text-gray-500 text-md pb-2 font-semibold hover:text-dkPur cursor-pointer">
 					Stocks
 				</li>
-				<li class="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+				<li class="text-gray-500 text-md pb-2 font-semibold hover:text-dkPur cursor-pointer">
 					Futures & Options
 				</li>
-				<li class="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+				<li class="text-gray-500 text-md pb-2 font-semibold hover:text-dkPur cursor-pointer">
 					Mutual Funds
 				</li>
-				<li class="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+				<li class="text-gray-500 text-md pb-2 font-semibold hover:text-dkPur cursor-pointer">
 					Fixed deposits
 				</li>
 			</ul>
@@ -50,19 +50,19 @@
 		<div class="p-5">
 			<ul>
 				<p class="text-gray-800 font-bold text-2xl pb-4">Company</p>
-				<li class="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+				<li class="text-gray-500 text-md pb-2 font-semibold hover:text-dkPur cursor-pointer">
 					About
 				</li>
-				<li class="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-					Products
+				<li class="text-gray-500 text-md pb-2 font-semibold hover:text-dkPur cursor-pointer">
+					 <a href="/terms">Terms and Conditions</a>
 				</li>
-				<li class="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+				<li class="text-gray-500 text-md pb-2 font-semibold hover:text-dkPur cursor-pointer">
 					Pricing
 				</li>
-				<li class="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+				<li class="text-gray-500 text-md pb-2 font-semibold hover:text-dkPur cursor-pointer">
 					Careers
 				</li>
-				<li class="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+				<li class="text-gray-500 text-md pb-2 font-semibold hover:text-dkPur cursor-pointer">
 					Press & Media
 				</li>
 			</ul>
@@ -70,19 +70,19 @@
 		<div class="p-5">
 			<ul>
 				<p class="text-gray-800 font-bold text-2xl pb-4">Support</p>
-				<li class="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+				<li class="text-gray-500 text-md pb-2 font-semibold hover:text-dkPur cursor-pointer">
 					Contact
 				</li>
-				<li class="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+				<li class="text-gray-500 text-md pb-2 font-semibold hover:text-dkPur cursor-pointer">
 					Support Portals
 				</li>
-				<li class="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+				<li class="text-gray-500 text-md pb-2 font-semibold hover:text-dkPur cursor-pointer">
 					List Of Charges
 				</li>
-				<li class="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+				<li class="text-gray-500 text-md pb-2 font-semibold hover:text-dkPur cursor-pointer">
 					Downloads & Resources
 				</li>
-				<li class="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+				<li class="text-gray-500 text-md pb-2 font-semibold hover:text-dkPur cursor-pointer">
 					Videos
 				</li>
 			</ul>
