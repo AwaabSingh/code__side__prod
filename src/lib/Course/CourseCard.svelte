@@ -10,13 +10,15 @@
 
         <section class="w-48 md:w-80 xl:w-96 py-8">
               <a  href={`/course/${course.publickKey}`} class="">
-                  <img src={`https://aqueous-beyond-13704.herokuapp.com/static/${course.banner}`} alt="" class='rounded-t-lg'>
+                  <img src={`https://aqueous-beyond-13704.herokuapp.com/static/${course.banner}`} alt={course.title} class='rounded-t-lg'>
               </a>
               <!-- Card content -->
               <div class="bg-white shadow-xl p-5 rounded-b-xl">
                   <!-- Card Title -->
                  <div class="card__title">
+                       <a  href={`/course/${course.publickKey}`} class="">
                     <h3 class='text-sm md:text-2xl font-bold text-dkPur'>{course.title}</h3>
+                    </a>
                  </div>
                  <div class="card__rating flex py-4 justify-between">
                       <div class="flex items-center ">

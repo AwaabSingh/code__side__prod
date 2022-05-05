@@ -1,18 +1,22 @@
 <script>
 	import { isOverLayOpen } from '../../store/overlay';
+	import { fade } from 'svelte/transition'
 	export let searchPostResult;
 	import comma from '../../store/numcomma';
 </script>
 
+<div class="relative">
 <div
-	class="w-screen h-screen fixed flex top-0 left-0 justify-center items-center bg-purple-300 opacity-95 z-10 "
+id="bg"
+	class="  flex fixed top-0 left-0 right-0 bottom-0 justify-center items-center z-10 bg-[#0b0b0b] opacity-90  mt-[4.8rem]"
 	on:click={() => isOverLayOpen.set(false)}
+	transition:fade
 >
 	<div
-		class="bg-white text-white rounded-md px-8 py-10 relative w-screen h-screen mt-10  mx-40"
+		class="bg-white shadow-lgnpm i daisyui text-white rounded-md px-8 py-[2.7rem] relative  mx-40 overflow-y-scroll z-20 opacity-95" 
 	>
 		<button
-			class="absolute text-center rounded-full px-3 py-0.5 bg-white top-2 right-3 text-4xl text-red-500"
+			class="absolute text-center rounded-full px-3 py-0.5 font-bold top-2 right-3 text-4xl text-red-500"
 			on:click={() => isOverLayOpen.set(false)}>&times;</button
 		>
 		{#each searchPostResult as searchPost}
@@ -67,18 +71,5 @@
 		{/each}
 	</div>
 </div>
+</div>
 
-<!-- <div style={{ overflow: 'hidden' }}>
-	<div
-		class="h-full w-full bg-[#0b0b0b] fixed top-0 left-0 z-[1042] overflow-hidden opacity-[0.8]"
-	/>
-	<button
-		class="absolute text-center rounded-full px-3 py-0.5 bg-white top-2 right-3 text-4xl text-red-500"
-		on:click={() => isOverLayOpen.set(false)}>&times;</button
-	>
-	<div class="top-0 left-0 w-full h-full z-[1042] overflow-hidden fixed">
-		<div class="top-0 left-0 w-full h-full z-[1042] overflow-hidden fixed">
-			<div class="max-w-full mx-auto z-[1045] align-middle relative" />
-		</div>
-	</div>
-</div> -->

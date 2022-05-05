@@ -32,6 +32,7 @@
     "axios": "^0.26.1",
     "boxicons": "^2.1.2",
     "cookie": "^0.5.0",
+    "daisyui": "^2.14.3",
     "jwt-decode": "^3.1.2",
     "svelte-icons-pack": "^1.4.6",
     "svelte-loading-skeleton": "^1.0.1",

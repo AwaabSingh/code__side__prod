@@ -8,14 +8,16 @@
 	>
 		<!-- Left item -->
 		<div class="flex flex-col md:mb-32  space-y-5 md:space-y-8 md:w-1/2 mt-10">
-			<h1 class="text_main text-6xl font-bold text-center md:text-5xl md:mt-5 md:text-left text-dkPur">
+			<h1
+				class="text_main text-6xl font-bold text-center md:text-5xl md:mt-5 md:text-left text-dkPur"
+			>
 				Platform for training
 			</h1>
 			<p class="text_main max-w-sm text-center  md:text-left font-medium">
 				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi cumque consequuntur pariatur
 				deleniti est, architecto err.
 			</p>
-			<div class="flex justify-center md:justify-start space-x-10">
+			<div class="flex justify-center md:justify-start md:space-x-10 space-x-2">
 				<a href="/register" class="btn-animated btn btn-white ">Get Started</a>
 				<a href="/#" class="btn-animated btn btn btn-white">Teach on Code Side</a>
 			</div>
@@ -29,7 +31,7 @@
 
 <style>
 	.bgimg {
-		background: url('/images/cblandinpg.png') no-repeat;
+		background: url('/images/cblandinpg_2.png') no-repeat;
 	}
 
 	.text_main {
@@ -89,6 +91,7 @@
 		animation: moveInBottom 1s ease-out 0.75s;
 		animation-fill-mode: backwards;
 	}
+
 
 	@keyframes moveInLeft {
 		0% {
