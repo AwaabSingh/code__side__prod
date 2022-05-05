@@ -21,7 +21,7 @@
                 console.log('200');
                 globalStore.toggleItem('alert', true, 'success')
 
-                goto('/')
+                goto('/dashboard')
             } 
             // console.log(user)
         } catch (error) {
