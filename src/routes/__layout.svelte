@@ -1,23 +1,28 @@
 <script>
-    import '../app.css'
-    import Navbar from  '../lib/Navbar/Navbar.svelte'
-    import globalStore  from '../store/globalStore'
-    import Footer from '../lib/Footer.svelte'
-    import Alert from '$lib/Alert.svelte'
-    import Cart from '$lib/Cart/Cart.svelte'
+	import '../app.css';
+	import Navbar from '../lib/Navbar/Navbar.svelte';
+	import globalStore from '../store/globalStore';
+	import Footer from '../lib/Footer.svelte';
+	import Alert from '$lib/Alert.svelte';
+	import Cart from '$lib/Cart/Cart.svelte';
+
+	export let SearchTerm = '';
 
 </script>
 
+
+
 <!-- Navbar -->
-<Navbar />
 
-	{#if $globalStore.cart}
-	<Cart/>
-	{/if}
+ 
+<Navbar {SearchTerm} />
 
-	
-    {#if globalStore.alert}
-  <Alert/>
+{#if $globalStore.cart}
+	<Cart />
 {/if}
-<slot/>
-<Footer/>
+
+{#if globalStore.alert}
+	<Alert />
+{/if}
+<slot />
+<Footer />

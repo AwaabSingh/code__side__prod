@@ -26,7 +26,7 @@
         <!-- Image -->
         <div class="pb-2">
             <a href={`/category/${cat.publickKey}`}>
-            {#if cat.name === "Web development"}
+            <!-- {#if cat.name === "Web development"}
             <img src="/images/webdev-01.png" alt= "" class='w-auto rounded-lg'>
             {:else if cat.name === "Web3"}
             <img src="/images/web3_w3.png" alt= "" class='w-auto rounded-lg'>
@@ -38,9 +38,9 @@
             <img src="/images/machine-learning-01.png" alt= "" class='w-auto rounded-lg'>
             {:else if cat.name === "Computer Science"}
             <img src="/images/compscience-01.png" alt= "" class='w-auto rounded-lg'>
-            {:else}
-            <img src="/images/hero.jpg" alt= "" class='w-auto rounded-lg'>
-            {/if}
+            {:else} -->
+            <img src={`https://aqueous-beyond-13704.herokuapp.com/static/${cat.banner}`} alt= "" class='w-auto rounded-lg'>
+            <!-- {/if} -->
             </a>
         </div>
          </div>

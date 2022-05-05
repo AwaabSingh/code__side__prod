@@ -10,7 +10,7 @@
 
         <section class="w-48 md:w-80 xl:w-96 py-8">
               <a  href={`/course/${course.publickKey}`} class="">
-                  <img src="/images/hero.jpg" alt="" class='rounded-t-lg'>
+                  <img src={`https://aqueous-beyond-13704.herokuapp.com/static/${course.banner}`} alt="" class='rounded-t-lg'>
               </a>
               <!-- Card content -->
               <div class="bg-white shadow-xl p-5 rounded-b-xl">

@@ -17,7 +17,7 @@
 				<div class="flex gap-6 pb-5 mt-5">
                     <a href="https://www.facebook.com/codesideacademy" target="_blank" class='px-4'>
 					<i class="bx bxl-facebook text-blue-600 text-2xl" />
-                    <a/>
+                    </a>
                     <a href="https://www.instagram.com/codesideacady/" target="_blank" class='px-4'>
 					<i class="bx bxl-instagram text-2xl" />
                     </a>

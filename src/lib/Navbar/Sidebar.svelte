@@ -4,7 +4,7 @@
     import Icon from 'svelte-icons-pack/Icon.svelte';
     import RiSystemCloseFill from "svelte-icons-pack/ri/RiSystemCloseFill";
     import { fly, fade } from 'svelte/transition';
-    import SearchIcon from '../SearchIcon.svelte';
+    import SearchIcon from '../SearchBar.svelte';
     import globalStore from '../../store/globalStore'
 import SmallLoginLink from '$lib/SmallLoginLink.svelte';
     
