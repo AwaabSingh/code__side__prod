@@ -16,7 +16,7 @@
             <article class="overflow-hidden rounded-lg shadow-lg bg-white">
 
                 <a href={`/course/${course.publickKey}`}>
-                    <img alt="Placeholder" class="block h-auto w-full" src=src={`https://aqueous-beyond-13704.herokuapp.com/static/${course.banner}`}>
+                    <img alt="Placeholder" class="block h-auto w-full" src={`https://aqueous-beyond-13704.herokuapp.com/static/${course.banner}`}>
                 </a>
 
                 <header class="flex items-center justify-between leading-tight p-2 md:p-4">
