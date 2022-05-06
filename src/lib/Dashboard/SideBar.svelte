@@ -1,7 +1,7 @@
 <script>
 	export let user;
     import comma from '../../store/numcomma'
-	console.log(user);
+
 </script>
 
 <nav class="w-80 flex-shrink-0 hidden md:block">

@@ -9,7 +9,7 @@ export const post = async({request})=>{
     // console.log(DataBody);
     if( submitToserver.data.status_code == 200){
         const headers = {
-            "Set-Cookie":cookie.serialize('access_token',DataBody.access_token,{
+            "Set-Cookie":cookie.serialize('acceiss_token',DataBody.access_token,{
                 httpOnly:true,
                 sameSite:"lax",
                 maxAge: 60*60*24*7,

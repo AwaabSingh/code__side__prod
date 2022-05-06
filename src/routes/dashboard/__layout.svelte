@@ -31,6 +31,8 @@
 
 	import Icon from 'svelte-icons-pack/Icon.svelte';
 	import AiOutlineMenu from 'svelte-icons-pack/ai/AiOutlineMenu';
+		import { page } from '$app/stores';
+		console.log($page)
 </script>
 
 <!-- <Navbar /> -->
