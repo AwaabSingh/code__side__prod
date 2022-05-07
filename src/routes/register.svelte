@@ -30,7 +30,7 @@ import { goto } from '$app/navigation';
 </script>
 
 <section id="register">
-    <div class="min-w-screen min-h-screen  flex items-center justify-center px-5 py-5">
+    <div class="min-w-screen min-h-screen  flex items-center justify-center px-10 py-5">
         <div class=" text-gray-500  w-full overflow-hidden" style="max-width:1000px">
             <div class="md:flex w-full">
                 <div class="hidden md:block w-1/2  py-20 px-10">
@@ -38,7 +38,7 @@ import { goto } from '$app/navigation';
                 </div>
                 <div class="w-full md:w-1/2 py-10 px-5 md:px-10">
                     <div class="text-center mb-10">
-                        <h1 class="font-bold text-3xl text-dkPur md:text-left">Register to start</h1>
+                        <h1 class="font-bold text-3xl text-dkPur md:text-left mt-16">Register to start</h1>
                         
                     </div>
                     <div class="flex -mx-3">

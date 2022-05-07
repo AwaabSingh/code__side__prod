@@ -5,9 +5,9 @@
 	import Footer from '../lib/Footer.svelte';
 	import Alert from '$lib/Alert.svelte';
 	import Cart from '$lib/Cart/Cart.svelte';
+	import Sidebar from '$lib/Navbar/Sidebar.svelte'
 
-	export let SearchTerm = '';
-
+//    console.log($globalSto)
 </script>
 
 
@@ -15,8 +15,11 @@
 <!-- Navbar -->
 
  
-<Navbar {SearchTerm} />
+<Navbar/>
 
+{#if $globalStore.sidebar}
+  <Sidebar/>
+{/if}
 {#if $globalStore.cart}
 	<Cart />
 {/if}

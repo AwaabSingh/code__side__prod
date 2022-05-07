@@ -2,6 +2,7 @@
      export let courses;
 
        import { paginate, LightPaginationNav } from 'svelte-paginate'
+       import comma from '../../store/numcomma'
  
   let items = courses
   let currentPage = 1
@@ -45,7 +46,7 @@
                         Course Price
                     </div>
                     <div class="no-underline ">
-                        <span class="text-gray-500 text-md font-bold">&#8358;{course.price}</span>
+                        <span class="text-gray-500 text-md font-bold">&#8358;{comma(course.price)}</span>
                         <i class="fa fa-heart"></i>
                     </div>
                 </footer>

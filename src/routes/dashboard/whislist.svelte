@@ -33,7 +33,7 @@
 
 <div class="max-w-6xl  mx-auto mt-10">
     <!-- Heading -->
-    <h2 class="text-xl md:text-4xl font-bold text-center">
+    <h2 class="text-xl md:text-4xl font-bold text-center mt-20 text-dkPur">
         My WishList
     </h2>
     <div class="mt-10 mx-4 gap-6 grid grid-cols-1 md:grid-cols-3">

@@ -31,7 +31,7 @@ import { claim_html_tag } from 'svelte/internal';
 	// export let user;
 </script>
 
-<header class="border-b-2 border-lgPur hide-mobile">
+<header class="border-b-2 border-lgPur hide-mobile fixed z-10 w-screen">
 	<div class=" flex flex-row items-center p-1 justify-between bg-white shadow-xs ">
 		<div class="ml-10 pr-3  hidden md:flex">
 			<a href="/" class="">

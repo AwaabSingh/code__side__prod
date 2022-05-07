@@ -6,8 +6,8 @@ import comma from '../../store/numcomma'
 import AllCourse from '$lib/Course/AllCourse.svelte';
 </script>
 
-<div class="container my-12 mx-auto px-4 md:px-12">
-      <h1 class='text-dkPur font-bold text-4xl pb-10'>All Courses Available</h1>
+<div class=" mx-auto px-4 md:px-12">
+      <h1 class='text-dkPur pt-28 font-bold text-4xl pb-10'>All Courses Available</h1>
     
 
         {#await getCourses()}

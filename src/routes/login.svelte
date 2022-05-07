@@ -45,7 +45,7 @@
                 </div>
                 <div class="w-full md:w-1/2 py-10 px-5 md:px-10">
                     <div class="text-center mb-10">
-                        <h1 class="font-bold text-3xl text-dkPur md:text-left">Welcome Back</h1>
+                        <h1 class="font-bold text-3xl text-dkPur md:text-left mt-16">Welcome Back</h1>
                         
                     </div>
                     <div class="flex -mx-3">

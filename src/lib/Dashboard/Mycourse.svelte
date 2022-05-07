@@ -6,9 +6,9 @@
   const cards = [0,1,2,3]
 </script>
 
-<div class="max-w-6xl px- mx-auto mt-20">
+<div class="max-w-6xl px- mx-auto mt-5 md:mt-20">
   <!-- Heading -->
-  <h2 class="text-xl md:text-4xl font-bold text-center">
+  <h2 class="text-xl md:text-4xl font-bold text-center mt-10 text-dkPur">
       My Courses
   </h2>
   <div class="mt-20 mx-4 gap-6 grid grid-cols-1 md:grid-cols-3">

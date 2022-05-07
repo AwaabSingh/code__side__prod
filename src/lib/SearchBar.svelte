@@ -3,7 +3,7 @@
   
   export let SearchTerm;
 
-  $: console.log(SearchTerm)
+
 </script>
 
 <span

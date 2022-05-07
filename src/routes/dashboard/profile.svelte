@@ -2,6 +2,7 @@
 	import axios from 'axios';
 	import { GetUser } from '../../Requests/users';
 	import url from '../../store/url';
+	import comma from '../../store/numcomma'
 	export const load = async ({ session }) => {
 		const u = await GetUser({ token: session.current_user.access_token });
 
@@ -35,7 +36,7 @@
 	};
 </script>
 
-  <div class="mt-10">
+  <div class="mt-28">
          <h2 class="text-xl md:text-4xl font-bold text-center text-dkPur">
       My Profile
   </h2>
@@ -62,7 +63,7 @@
 
 			<div class="mt-3 text-white text-sm space-x-5">
 				<span class="text-white font-semibold">Wallet Balance:</span>
-				<span class="text-white font-semibold">&#8358;{user.wallet}</span>
+				<span class="text-white font-semibold">&#8358;{comma(user.wallet)}</span>
 			</div>
 		</section>
         </div>

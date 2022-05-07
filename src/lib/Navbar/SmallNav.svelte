@@ -7,8 +7,9 @@
     import {Toggle} from "$lib/utilities/actions"
 
     let openSidebar = globalStore.toggleItem
+    console.log(openSidebar('sidebar', true))
 </script>
-<header class='border-b border-lgPur show-mobile'>
+<header class='border-b border-lgPur show-mobile fixed z-10 w-screen bg-white'>
   <nav class='relative container mx-auto px-6 py-3'>
     <div class="flex items-center justify-between">
       

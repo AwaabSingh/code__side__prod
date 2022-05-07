@@ -1,11 +1,10 @@
 <script>
 	export let user;
-    import comma from '../../store/numcomma'
-
+	import comma from '../../store/numcomma';
 </script>
 
 <nav class="w-80 flex-shrink-0 hidden md:block">
-	<div class="flex-auto bg-white shadow-lg p-3 h-full rounded pb-10">
+	<div class="flex-auto bg-white shadow-lg p-3 h-full rounded pb-10 pt-20">
 		<div class="flex flex-col overflow-y-auto">
 			<ul class="relative m-0 p-0 list-none h-full">
 				<div class="space-y-3 pb-8 ">
@@ -20,8 +19,8 @@
 						<h6 class="font-bold capitalize">{user.fullname}</h6>
 						<p class="font-bold">{user.email}</p>
 						<div class="font-bold space-x-3">
-						<span>Wallet Balance:</span>
-                         <span> &#8358;{user.wallet}</span>
+							<span>Wallet Balance:</span>
+							<span> &#8358;{comma(user.wallet)}</span>
 						</div>
 					</div>
 				</div>
@@ -123,13 +122,13 @@
 						<span>Wishlist</span>
 					</a>
 				</li>
-                	<li>
+				<li>
 					<a
 						href="/dashboard/history"
 						class="flex items-center space-x-3 text-gray-700 p-2 rounded font-medium hover:bg-slate-300 hover:border-l-4 hover:border-lgPur focus:shadow-outline py-6"
 					>
 						<span class=" text-gray-600">
-						<i class='bx bx-history text-xl'></i>
+							<i class="bx bx-history text-xl" />
 						</span>
 						<span>Transaction history</span>
 					</a>

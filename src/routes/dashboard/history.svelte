@@ -2,7 +2,7 @@
 </script>
 
 <div class="md:mx-10">
-	<div class="bg-white p-6 rounded-md shadow overflow-auto md:m- m-6">
+	<div class="bg-white p-6 rounded-md shadow overflow-auto md:m- m-6 mt-24">
 		<span class="block font-medium md:text-lg mb-4"> Billing History </span>
 
 		<table class="sm:table-fixed w-full divide-y font-medium">

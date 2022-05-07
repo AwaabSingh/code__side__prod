@@ -42,8 +42,8 @@
 		<Mboard {user} />
 	{/if}
 
-	<div class="flex flex-col w-full  pb-10">
-		<div class="md:hidden py-5">
+	<div class="flex flex-col w-full  ">
+		<div class="md:hidden pt-28 mx-4">
 			<div
 				class="bg-white py-2 px-3 shadow-xl  w-12 rounded-full"
 				on:click={() => globalStore.toggleItem('mboard', true)}
@@ -55,3 +55,4 @@
 		<slot />
 	</div>
 </div>
+ 

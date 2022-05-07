@@ -1,10 +1,10 @@
 <script>
 </script>
 
-<section id="hero" class="mb-40 bgimg">
+<section id="hero" class="mb-40 bgimg pt-24 md:pt-40 ">
 	<!-- Flex Container -->
 	<div
-		class="container flex flex-col-reverse items-center px-6 mx-auto pt-10 space-y-0 md:space-y-0 md:flex-row"
+		class="container flex flex-col-reverse items-center px-6 mx-auto  space-y-0 md:space-y-0 md:flex-row"
 	>
 		<!-- Left item -->
 		<div class="flex flex-col md:mb-32  space-y-5 md:space-y-8 md:w-1/2 mt-10">
@@ -19,7 +19,7 @@
 			</p>
 			<div class="flex justify-center md:justify-start md:space-x-10 space-x-2">
 				<a href="/register" class="btn-animated btn btn-white ">Get Started</a>
-				<a href="/#" class="btn-animated btn btn btn-white">Teach on Code Side</a>
+				<a href="/#" class="btn-animated  btn btn-white">Teach on Code Side</a>
 			</div>
 		</div>
 		<!-- Image -->
@@ -32,6 +32,7 @@
 <style>
 	.bgimg {
 		background: url('/images/cblandinpg_2.png') no-repeat;
+		/* padding-top: 20px; */
 	}
 
 	.text_main {
@@ -42,7 +43,7 @@
 	.btn:link,
 	.btn:visited {
 		text-decoration: none;
-		padding: 1.2rem 2rem;
+		padding: 1rem 1rem;
 		display: inline-block;
 		border-radius: 10rem;
 		transition: all 0.2s;

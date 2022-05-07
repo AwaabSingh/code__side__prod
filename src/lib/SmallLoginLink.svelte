@@ -13,7 +13,7 @@
 {#if userToken}
 <a  on:click="{() => globalStore.toggleItem('sidebar', false)}"
     href="/dashboard"
-    class=" p-2 px-32 pt-2 text-lgPur rounded-xl baseline hover:bg-dkPur hover:text-white md:block border border-dkPur"
+    class=" p-2 px-20 pt-2 text-lgPur rounded-xl baseline hover:bg-dkPur hover:text-white md:block border border-dkPur"
     >
     Dashboard
 </a>
@@ -21,7 +21,7 @@
 {:else}
 <a  on:click="{() => globalStore.toggleItem('sidebar', false)}"
     href="/login"
-    class=" p-2 px-32 pt-2 text-lgPur rounded-xl baseline hover:bg-dkPur hover:text-white md:block border border-dkPur"
+    class=" p-2 px-20 pt-2 text-lgPur rounded-xl baseline hover:bg-dkPur hover:text-white md:block border border-dkPur"
     >
     Login
 </a>
