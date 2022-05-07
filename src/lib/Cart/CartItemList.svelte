@@ -2,6 +2,7 @@
 	import { session } from '$app/stores';
 	import axios from 'axios';
 	import url from '../../store/url';
+	import comma from '../../store/numcomma'
 	export let cartItem;
 
 	//   vars
@@ -32,7 +33,7 @@
 	<div class="flex justify-between">
 		<div class="">
 			<h4 class="font-semibold text-dkPur">{cartItem.title}</h4>
-			<h5 class="font-semibold text-dkPur">&#8358;{cartItem.price}</h5>
+			<h5 class="font-semibold text-dkPur">&#8358;{comma(cartItem.price)}</h5>
 		</div>
 		<button class="cart-btn remove-btn" on:click={() => removeItem(cartItem.publickKey)}>
 			<i class="bx bxs-trash-alt text-red-600 text-2xl" />

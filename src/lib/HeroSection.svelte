@@ -9,7 +9,7 @@
 		<!-- Left item -->
 		<div class="flex flex-col md:mb-32  space-y-5 md:space-y-8 md:w-1/2 mt-10">
 			<h1
-				class="text_main text-6xl font-bold text-center md:text-5xl md:mt-5 md:text-left text-dkPur"
+				class="text_main text-6xl font-bold text-center md:text-5xl md:mt-5 md:text-left text-dkPur capitalize"
 			>
 				Platform for training
 			</h1>
