@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<section id="hero" class="mb-40 bgimg pt-24 md:pt-40 ">
+<section id="hero" class="mb-40 bgimg pt-24 md:pt-32 ">
 	<!-- Flex Container -->
 	<div
 		class="container flex flex-col-reverse items-center px-6 mx-auto  space-y-0 md:space-y-0 md:flex-row"
@@ -31,7 +31,7 @@
 
 <style>
 	.bgimg {
-		background: url('/images/cblandinpg_2.png') no-repeat;
+		/* background: url('/images/cblandinpg_2.png') no-repeat; */
 		/* padding-top: 20px; */
 	}
 

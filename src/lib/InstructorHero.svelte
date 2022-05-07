@@ -4,7 +4,7 @@
 <section  id="hero">
     <!-- Flex Container -->
     <div
-      class="container flex flex-col-reverse items-center px-6 mx-auto mt-20 space-y-0 md:space-y-0 md:flex-row"
+      class="container box-border flex flex-col-reverse items-center px-6 mx-auto mt-20 space-y-0 md:space-y-0 md:flex-row"
     >
       <!-- Left item -->
       <div class="flex flex-col mb-32  space-y-5 md:space-y-8 md:w-1/2 mt-10 md:mr-40">
@@ -26,16 +26,15 @@
       </div>
       <!-- Image -->
       <div class="md:w-1/2 bgImg">
-        <img  src="/images/tutort.png" alt="" class='rounded-xl w-60 text-center md:w-[80%] pb-20' />
+        <img  src="/images/instructor-ill.svg" alt="" class='rounded-xl w-[100%] text-center md:w-[80%] pb-20' />
       </div>
     </div>
   </section>
 
   <style>
-     .bgImg {
+     /* .bgImg {
        background-image: url('/images/cbteacher.png');
        background-size: cover;
-       /* background-position: ; */
        position: relative;
-     }
+     } */
   </style>

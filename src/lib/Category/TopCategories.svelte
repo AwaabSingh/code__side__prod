@@ -19,7 +19,7 @@
          <div class="bg-white px-5 py-3 rounded-xl shadow-lg mb-3 ">
               <!-- text -->
               <a href={`/category/${cat.publickKey}`}>
-           <div class="pb-3 font-bold text-lgPur uppercase">
+           <div class="pb-3 font-bold text-lgPur capitalize">
             <h4>{cat.name}</h4>
         </div>
         </a>

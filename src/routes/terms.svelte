@@ -1,4 +1,4 @@
-<section class="padding-y-lg">
+<section class="padding-y-lg pt-20">
 	<header class="container max-width-xs margin-bottom-lg text-left ">
 		<div class="text-component text-center line-height-lg v-space-md margin-bottom-md">
 			<h1 class="text-4xl font-bold text-dkPur py-10">Terms and Conditions</h1>
